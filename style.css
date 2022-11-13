@@ -14,8 +14,14 @@ body {
   font-weight: 400;
   color: #fff;
   font-family: "Inter", sans-serif;
-  line-height: 1.5;
+  line-height: 1.7;
   background-color: #999;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3;
 }
 
 .theme-button {
@@ -25,7 +31,11 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   border-radius: 8px;
-  margin-left: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+.theme-button:hover {
+  color: #fff;
 }
 .theme-button img {
   margin-left: 10px;
@@ -53,6 +63,10 @@ Header Css Start
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   padding: 14px 22px;
+  margin-left: 20px;
+}
+.header-area .theme-button {
+  margin-left: 24px;
 }
 
 @media (max-width: 991px) {
@@ -74,12 +88,42 @@ Header Css Start
   }
   .header-area .nav-link::after {
     position: absolute;
-    right: 0;
+    right: 25px;
     top: 50%;
     transform: translateY(-50%);
   }
   .header-area .navbar-toggler {
     border: 0;
     box-shadow: none;
+  }
+}
+/* Hero Area Css Start */
+.hero-area {
+  background-image: url(images/hero-section.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.hero-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.hero-text .theme-button {
+  margin-top: 20px;
+}
+@media (max-width: 991px) {
+  .hero-area {
+    padding: 70px 0;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-text h2 {
+    font-size: 32px;
+  }
+  .hero-text .theme-button {
+    width: 80%;
+    margin-bottom: 30px;
   }
 }
