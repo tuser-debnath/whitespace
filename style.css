@@ -199,3 +199,16 @@ Extension Area Css Start
     margin-bottom: 30px;
   }
 }
+
+/* 
+Customise Area Css Start
+*/
+.customise-area {
+  background-color: #fff;
+}
+@media (max-width: 991px) {
+  .customise-area .theme-button {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+}
