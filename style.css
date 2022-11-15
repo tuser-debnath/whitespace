@@ -212,3 +212,30 @@ Customise Area Css Start
     margin-bottom: 30px;
   }
 }
+
+/* 
+Your Work Area Css Start
+*/
+.your-work-area {
+  background-color: #043873;
+}
+.your-work-area .theme-text {
+  text-align: center;
+}
+.your-work-area .theme-text h3 {
+  color: #fff;
+}
+.your-work-area .theme-text span::after {
+  background-image: url(images/element-two.png);
+  background-size: contain;
+  background-position: bottom;
+}
+.your-work-area .theme-text p {
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .your-work-area .theme-button {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+}
