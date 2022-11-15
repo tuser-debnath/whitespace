@@ -24,7 +24,7 @@ body {
   background-color: #4f9cf9;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 5px;
   color: #fff;
   text-decoration: none;
 }
@@ -41,7 +41,7 @@ body {
   background-color: #ffe492;
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 5px;
   margin-left: 35px !important;
 }
 .section-padding {
@@ -179,5 +179,23 @@ Header Css Start
   }
   .work-management {
     margin-top: 50px;
+  }
+}
+/* 
+Extension Area Css Start
+*/
+.extension-area {
+  background-color: #043873;
+}
+.extension-area .theme-text h3 {
+  color: #fff;
+}
+.extension-area .theme-text p {
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .extension-area .theme-button {
+    width: 80%;
+    margin-bottom: 30px;
   }
 }
