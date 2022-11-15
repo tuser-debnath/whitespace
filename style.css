@@ -219,9 +219,6 @@ Your Work Area Css Start
 .your-work-area {
   background-color: #043873;
 }
-.your-work-area .theme-text {
-  text-align: center;
-}
 .your-work-area .theme-text h3 {
   color: #fff;
 }
@@ -235,6 +232,20 @@ Your Work Area Css Start
 }
 @media (max-width: 991px) {
   .your-work-area .theme-button {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+}
+
+/* 
+Your Data Area Css Start
+*/
+
+.your-data-area {
+  background-color: #fff;
+}
+@media (max-width: 991px) {
+  .your-data-area .theme-button {
     width: 80%;
     margin-bottom: 30px;
   }
