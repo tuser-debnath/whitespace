@@ -17,12 +17,6 @@ body {
   line-height: 1.7;
   background-color: #999;
 }
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.3;
-}
 
 .theme-button {
   display: inline-block;
@@ -49,6 +43,49 @@ h4 {
   font-weight: 500;
   border-radius: 8px;
   margin-left: 35px !important;
+}
+.section-padding {
+  padding: 100px 0;
+}
+@media (max-width: 991px) {
+  .section-padding {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 991px) {
+  .theme-text {
+    text-align: center;
+  }
+}
+.theme-text h3 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #043873;
+}
+@media (max-width: 991px) {
+  .theme-text h3 {
+    font-size: 30px;
+  }
+}
+.theme-text p {
+  color: #043873;
+  margin-bottom: 30px;
+}
+.theme-text span {
+  position: relative;
+  z-index: 1;
+}
+.theme-text span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 52px;
+  bottom: 0;
+  left: 0;
+  background-image: url(images/element.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 /* 
@@ -103,7 +140,6 @@ Header Css Start
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 0;
 }
 .hero-text h2 {
   font-size: 48px;
@@ -125,5 +161,23 @@ Header Css Start
   .hero-text .theme-button {
     width: 80%;
     margin-bottom: 30px;
+  }
+}
+
+/* Management Area Css Start */
+
+.management-area {
+  background-color: #fff;
+}
+.work-management {
+  margin-top: 80px;
+}
+@media (max-width: 991px) {
+  .management-area .theme-button {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .work-management {
+    margin-top: 50px;
   }
 }
