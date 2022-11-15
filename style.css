@@ -44,6 +44,17 @@ body {
   border-radius: 5px;
   margin-left: 35px !important;
 }
+.theme-button-three {
+  color: #043873 !important;
+  display: inline-block;
+  padding: 14px 22px !important;
+  background-color: #fff;
+  border: 1px solid #ffe492;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  text-decoration: none;
+}
 .section-padding {
   padding: 100px 0;
 }
@@ -209,6 +220,61 @@ Customise Area Css Start
 @media (max-width: 991px) {
   .customise-area .theme-button {
     width: 80%;
+    margin-bottom: 30px;
+  }
+}
+/* 
+Pricing Area Css Start
+*/
+.pricing-area {
+  background-color: #fff;
+}
+.pricing-area .theme-text {
+  margin-bottom: 50px;
+}
+.single-pricing {
+  color: #212529;
+  padding: 35px 38px;
+  border: 1px solid #ffe492;
+  border-radius: 8px;
+}
+.single-pricing h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.single-pricing h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 18px 0;
+}
+.single-pricing ul {
+  margin: 0;
+  padding: 0;
+}
+.single-pricing ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.single-pricing ul li img {
+  padding-right: 10px;
+}
+.special-pricing {
+  background-color: #043873;
+  color: #fff;
+  padding: 70px 38px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+}
+.special-pricing h3 {
+  color: #ffe492;
+}
+@media (max-width: 991px) {
+  .pricing-area {
+    padding: 80px 0 50px 0;
+  }
+  .single-pricing {
     margin-bottom: 30px;
   }
 }
