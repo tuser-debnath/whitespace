@@ -60,7 +60,7 @@ body {
 .theme-text h3 {
   font-size: 56px;
   font-weight: 700;
-  color: #043873;
+  color: #212529;
 }
 @media (max-width: 991px) {
   .theme-text h3 {
@@ -68,7 +68,7 @@ body {
   }
 }
 .theme-text p {
-  color: #043873;
+  color: #212529;
   margin-bottom: 30px;
 }
 .theme-text span {
@@ -248,5 +248,28 @@ Your Data Area Css Start
   .your-data-area .theme-button {
     width: 80%;
     margin-bottom: 30px;
+  }
+}
+
+/* 
+Sponsor Area Css Start
+*/
+.sponsor-area {
+  background-color: #fff;
+}
+.sponsor-area .theme-text {
+  margin-bottom: 70px;
+}
+.single-sponsor img {
+  height: 45px;
+  width: auto;
+}
+
+@media (max-width: 991px) {
+  .sponsor-area {
+    padding: 80px 0 40px 0;
+  }
+  .single-sponsor {
+    margin-bottom: 40px;
   }
 }
