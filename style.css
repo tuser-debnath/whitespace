@@ -339,3 +339,31 @@ Sponsor Area Css Start
     margin-bottom: 40px;
   }
 }
+
+/* 
+Apps Area Css Start
+*/
+.apps-area {
+  background-image: url(images/apps-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.apps-area .theme-text h3 {
+  font-size: 50px;
+  color: #fff;
+}
+.apps-area .theme-text p {
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .apps-image {
+    margin-bottom: 40px;
+  }
+  .apps-area .theme-text h3 {
+    font-size: 30px;
+  }
+  .apps-area .theme-button {
+    width: 80%;
+  }
+}
