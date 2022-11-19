@@ -431,3 +431,37 @@ Testinonial Area Css Start
     margin-top: 20px;
   }
 }
+/* 
+Trail Area Css Start
+*/
+.trial-area {
+  background-color: #043873;
+}
+.trial-text h3 {
+  font-size: 56px;
+}
+.trial-text .theme-button {
+  margin: 10px 0 20px 0;
+}
+.trial-img {
+  margin-top: 30px;
+}
+.trial-img a {
+  margin: 0 15px;
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  .trial-text {
+    text-align: left !important;
+  }
+  .trial-text h3 {
+    font-size: 30px;
+  }
+  .trial-area .theme-button {
+    width: 80%;
+  }
+  .trial-img a {
+    margin: 0;
+    margin-right: 15px;
+  }
+}
