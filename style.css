@@ -31,8 +31,8 @@ body {
 .theme-button:hover {
   color: #fff;
 }
-.theme-button img {
-  margin-left: 10px;
+.theme-button i {
+  margin-left: 7px;
 }
 .theme-button-two {
   color: #043873 !important;
@@ -43,6 +43,11 @@ body {
   font-weight: 500;
   border-radius: 5px;
   margin-left: 35px !important;
+}
+@media (max-width: 1199px) {
+  .theme-button-two {
+    margin-left: 12px !important;
+  }
 }
 .theme-button-three {
   color: #043873 !important;
@@ -107,11 +112,21 @@ Header Css Start
   background-color: #043873;
 }
 .header-area .nav-link {
+  font-size: 16px;
   color: #fff;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   padding: 14px 22px;
   margin-left: 20px;
+}
+@media (max-width: 1199px) {
+  .header-area .nav-link {
+    font-size: 14px;
+    margin-left: 12px;
+  }
+  .header-area .theme-button {
+    margin-left: 14px;
+  }
 }
 .header-area .theme-button {
   margin-left: 24px;
@@ -183,6 +198,11 @@ Header Css Start
 .work-management {
   margin-top: 80px;
 }
+.management-area .theme-text span::after {
+  background-image: url(images/work-element.png);
+  background-position: bottom;
+  background-size: contain;
+}
 @media (max-width: 991px) {
   .management-area .theme-button {
     width: 80%;
@@ -217,6 +237,9 @@ Customise Area Css Start
 .customise-area {
   background-color: #fff;
 }
+.customise-area .theme-text span::after {
+  background-image: url(images/customise-element.png);
+}
 @media (max-width: 991px) {
   .customise-area .theme-button {
     width: 80%;
@@ -231,6 +254,12 @@ Pricing Area Css Start
 }
 .pricing-area .theme-text {
   margin-bottom: 50px;
+}
+.pricing-area .theme-text span::after {
+  background-image: url(images/price-element.png);
+  background-position: bottom;
+  background-size: contain;
+  left: 8px;
 }
 .single-pricing {
   color: #212529;
@@ -247,6 +276,10 @@ Pricing Area Css Start
   font-weight: 700;
   margin: 18px 0;
 }
+.single-pricing img {
+  width: 28px !important;
+  height: 20px !important;
+}
 .single-pricing ul {
   margin: 0;
   padding: 0;
@@ -256,6 +289,8 @@ Pricing Area Css Start
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 .single-pricing ul li img {
   padding-right: 10px;
@@ -270,6 +305,28 @@ Pricing Area Css Start
 .special-pricing h3 {
   color: #ffe492;
 }
+.pricing-area .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.pricing-area .owl-dots button.owl-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #4f9cf9;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+.pricing-area .owl-dots button.active {
+  background-color: #043873;
+}
+.pricing-area .owl-dots {
+  margin-top: 30px;
+  text-align: center;
+}
+/* .pricing-area .owl-item.active {
+  width: 357px !important;
+} */
+
 @media (max-width: 991px) {
   .pricing-area {
     padding: 80px 0 50px 0;
@@ -310,6 +367,11 @@ Your Data Area Css Start
 .your-data-area {
   background-color: #fff;
 }
+.your-data-area .theme-text span::after {
+  background-image: url(images/data-element.png);
+  background-position: bottom;
+  background-size: contain;
+}
 @media (max-width: 991px) {
   .your-data-area .theme-button {
     width: 80%;
@@ -325,6 +387,11 @@ Sponsor Area Css Start
 }
 .sponsor-area .theme-text {
   margin-bottom: 70px;
+}
+.sponsor-area .theme-text span::after {
+  background-image: url(images/sponsor-element.png);
+  background-size: contain;
+  background-position: bottom;
 }
 .single-sponsor img {
   height: 45px;
@@ -377,11 +444,21 @@ Testinonial Area Css Start
 .testimonial-area .theme-text {
   margin-bottom: 50px;
 }
+.testimonial-area .theme-text span::after {
+  background-image: url(images/testimonial-vector.png);
+  background-size: contain;
+  background-position: bottom;
+}
 .single-testimonial {
   padding: 35px 20px;
   background: #4f9cf9;
-  box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.03);
+  box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  transition: 0.3s;
+}
+.single-testimonial:hover {
+  background-color: #fff;
+  color: #212529;
 }
 .testimonial-text {
   border-bottom: 1px solid #fff;
@@ -436,6 +513,7 @@ Trail Area Css Start
 */
 .trial-area {
   background-color: #043873;
+  padding: 100px 0 32px 0;
 }
 .trial-text h3 {
   font-size: 56px;
@@ -451,6 +529,9 @@ Trail Area Css Start
   text-decoration: none;
 }
 @media (max-width: 991px) {
+  .trial-area {
+    padding: 70px 0 32px 0;
+  }
   .trial-text {
     text-align: left !important;
   }
@@ -463,5 +544,102 @@ Trail Area Css Start
   .trial-img a {
     margin: 0;
     margin-right: 15px;
+  }
+}
+/* 
+Footer Area Css Start
+*/
+.footer-area {
+  background-color: #043873;
+  padding-bottom: 0;
+}
+.footer-top {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #03428a;
+}
+.footer-about img {
+  margin-bottom: 15px;
+}
+.footer-links h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+}
+.footer-links ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  transition: 0.3s;
+}
+.footer-links ul li a:hover {
+  color: #ffe492;
+}
+.footer-contact h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.footer-bottom {
+  padding: 25px 0;
+}
+.footer-social {
+  text-align: right;
+}
+.footer-lan a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-lan .dropdown-menu a {
+  color: #043873;
+}
+.footer-lan i {
+  margin-right: 5px;
+}
+.footer-social a {
+  font-size: 22px;
+  color: #fff;
+  margin-left: 25px;
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .footer-top {
+    text-align: center;
+    border: 1px solid transparent;
+  }
+  .footer-about {
+    margin-bottom: 30px;
+  }
+  .footer-links {
+    margin: 30px 0;
+  }
+  .footer-contact {
+    margin-top: 30px;
+  }
+  .footer-area .theme-button {
+    width: 80%;
+  }
+  .footer-lan {
+    text-align: center;
+  }
+  .footer-copyright {
+    padding: 20px 0;
+  }
+  .footer-social {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid #03428a;
+  }
+  .footer-social a {
+    margin: 0;
+    padding: 0 16px;
   }
 }
